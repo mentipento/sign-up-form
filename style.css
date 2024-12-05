@@ -1,0 +1,22 @@
+* {
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    padding: 0 15vb;
+}
+
+div.background {
+    display: flex;
+    flex: 1;
+    background: no-repeat center/auto 100% url("./media/background-image.jpg");
+
+}
+
+div.menu {
+    display: flex;
+    flex: 2
+}
