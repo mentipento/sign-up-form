@@ -1,5 +1,13 @@
+@font-face {
+    font-family: 'island_momentsregular';
+    src: url('./fonts/island_momentsregular/islandmoments-regular-webfont.woff2') format('woff2'),
+         url('./fonts/island_momentsregular/islandmoments-regular-webfont.woff') format('woff'),
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     box-sizing: border-box;
 }
 
@@ -13,10 +21,65 @@ div.background {
     display: flex;
     flex: 1;
     background: no-repeat center/auto 100% url("./media/background-image.jpg");
+    position: relative;
 
+}
+
+div.overlay {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background-color: rgb(160, 82, 45, 0.5);
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
 }
 
 div.menu {
     display: flex;
-    flex: 2
+    flex: 2;
+    flex-direction: column;
+}
+
+div.section1,
+div.section2,
+div.section3 {
+    display: flex;
+    flex: 1;
+    height: 100px;
+    background-color: #f4eee8;
+}
+
+div.section1 {
+    font-family: island_momentsregular, Arial;
+    color: rgb(1, 106, 176);
+    font-size: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+div.section1 p {
+    display: flex;
+}
+
+.brand-name {
+    font-size: 3rem;
+    font-family: island_momentsregular;
+    margin-top: -20px;
+}
+
+.image-credits {
+    position: absolute;
+    bottom: 1.5%;
+    margin: 0 auto;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgb(37, 101, 180, 0.8);
+    color: white;
+    padding: 2px 4px;
+    border: 1px solid white;
+    font-size: 0.8rem;
 }
