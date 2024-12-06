@@ -94,7 +94,7 @@ body {
     position: absolute;
     bottom: 1.5%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%);
     width: 50%;
     text-align: center;
     background-color: rgba(37, 101, 180, 0.8);
@@ -207,7 +207,7 @@ button {
         white-space: nowrap;
         text-align: center;
         overflow: visible;
-        content: "must be at least 10 characters long and contain at least one number and one special character";
+        content: "must be at least 10 characters long and contain at least one number and one special character @$!%*?&";
     }
 
     .tooltip:hover::after {
