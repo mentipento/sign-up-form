@@ -10,7 +10,7 @@
 /* Globale Stile */
 * {
     box-sizing: border-box;
-    border: 1px solid red; /* Debug-Rahmen; entfernen im Produktionscode */
+    /* border: 1px solid red; */
 }
 
 body {
@@ -18,6 +18,8 @@ body {
     display: flex;
     padding: 0 15vb;
     margin: 0;
+    font-size: 0.9rem;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 /* Hintergrundbild */
@@ -63,10 +65,13 @@ body {
     font-size: 5rem;
     justify-content: center;
     align-items: center;
-    flex: 1.5;
+    flex: 1.3;
 }
 
-.section2 { flex: 2; }
+.section2 { 
+    flex: 2.8;
+    border: 1px solid white;
+}
 .section3 { flex: 1; }
 
 /* Text in section1 */
@@ -109,19 +114,51 @@ form .row {
     display: flex;
     align-items: center;
     padding: 0.5rem;
+    justify-content: flex-start;
+    gap: 3.5rem;
 }
 
-button {
-width: 15rem;
-height: 3rem;
-padding: 1rem;
-background-color: rgba(37, 101, 180);
-color: white;
-border: 1px solid white;
-}
 
 button:hover {
     background-color: white;
     color:  rgba(37, 101, 180);
     border: 1px solid  rgba(37, 101, 180); 
 }
+
+input,
+button,
+select {
+    font-size: inherit;
+    font-family: inherit;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    height: 1.6rem;
+    width: 16rem;
+    color: grey;
+}
+
+input:user-invalid {
+border: 1px solid red;
+}
+
+label {
+    background-color: rgba(37, 101, 180); 
+    color: white;
+    width: 50%;
+    margin-bottom: 2px;
+    padding: 2px 4px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+
+button {
+    width: 15rem;
+    height: 3rem;
+    padding: 1rem;
+    background-color: rgba(37, 101, 180);
+    color: white;
+    border: 1px solid white;
+    }
