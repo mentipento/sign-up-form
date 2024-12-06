@@ -13,7 +13,7 @@
             <div class="brand-name">Odin Travels</div>
         </div>
         <div class="image-credits">
-            Foto: © 李 先生
+            Foto: © 李 先生 – Pexels.com
         </div>
     </div>
     <div class="menu">
@@ -24,8 +24,91 @@
              </p>
         </div>
         <div class="section2">
+            <form action="" method="get" class="container" id="form">
+                <div class="row">
+                    <div class="header">Please sign up for your next vacation</div>
+                </div>
+                <div class="row">
+                    <div class="input">
+                        <label for="check-in">Check-in date:</label>
+                        <input type="date" id="check-in" name="check-in">
+                    </div>
+                    <div class="input">
+                        <label for="check-out">Check-out date:</label>
+                        <input type="date" id="check-out" name="check-out">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input">
+                        <label for="bungalow">Choose your bungalow class:</label>
+                        <select name="bungalow" id="bungalow">
+                            <option value="basic">basic</option>
+                            <option value="deluxe">deluxe</option>
+                            <option value="luxury">luxury</option>
+                        </select>
+                    </div>
+                    <div class="input"></div>
+                </div>
+                <div class="row">
+                    <div class="input">
+                        <label for="first-name">First name:</label>
+                        <input type="text" id="first-name" name="first-name" autocomplete="name">
+                    </div>
+                    <div class="input">
+                        <label for="last-name">Last name:</label>
+                        <input type="text" id="last-name" name="last-name" autocomplete="family-name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input">
+                        <label for="street">Street and number:</label>
+                        <input type="text" id="street" name="street" autocomplete="street-address">
+                    </div>
+                    <div class="input">
+                        <label for="zip">Zip code:</label>
+                        <input type="text" id="zip" name="zip" autocomplete="postal-code">
+                    </div>
+                    <div class="input">
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input">
+                        <label for="email">Email adress:</label>
+                        <input type="email" id="email" name="email" autocomplete="email">
+                    </div>
+                    <div class="input">
+                        <label for="phone">Phone number:</label>
+                        <input type="tel" id="phone" name="phone" autocomplete="tel">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input">
+                        <label for="cc">Credit card number:</label>
+                        <input type="text" inputmode="numeric" autocomplete="cc-number" id="cc">
+                    </div>
+                    <div class="input">
+                        <label for="cc-expire">Expiration date:</label>
+                        <input type="text" inputmode="numeric" autocomplete="cc-exp" id="cc-expire">
+                    </div>
+                    <div class="input">
+                        <label for="cc-code">Security code:</label>
+                        <input type="text" inputmode="numeric" autocomplete="cc-csc" id="cc-code">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" autocomplete="current-password">
+                    </div>
+                </div>
+            </form>
         </div>
-        <div class="section3"></div>
+        <div class="section3">
+            <div><button type="submit" form="form">Submit</button></div>
+
+        </div>
     </div>
 </body>
 </html>

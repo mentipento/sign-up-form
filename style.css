@@ -1,85 +1,127 @@
+/* Import der benutzerdefinierten Schriftart */
 @font-face {
     font-family: 'island_momentsregular';
     src: url('./fonts/island_momentsregular/islandmoments-regular-webfont.woff2') format('woff2'),
-         url('./fonts/island_momentsregular/islandmoments-regular-webfont.woff') format('woff'),
+         url('./fonts/island_momentsregular/islandmoments-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
+/* Globale Stile */
 * {
-    /* border: 1px solid red; */
     box-sizing: border-box;
+    border: 1px solid red; /* Debug-Rahmen; entfernen im Produktionscode */
 }
 
 body {
     min-height: 100vh;
     display: flex;
     padding: 0 15vb;
+    margin: 0;
 }
 
-div.background {
+/* Hintergrundbild */
+.background {
     display: flex;
     flex: 1;
     background: no-repeat center/auto 100% url("./media/background-image.jpg");
     position: relative;
-
 }
 
-div.overlay {
+/* Overlay für das Logo */
+.overlay {
     position: absolute;
+    top: 10%;
     width: 100%;
     height: 20%;
-    background-color: rgb(160, 82, 45, 0.5);
-    top: 10%;
+    background-color: rgba(249, 203, 139, 0.7);
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     border: 1px solid white;
 }
 
-div.menu {
+/* Menü-Bereich */
+.menu {
     display: flex;
     flex: 2;
     flex-direction: column;
 }
 
-div.section1,
-div.section2,
-div.section3 {
+/* Sektionen im Menü */
+.section1, 
+.section2,
+.section3 {
     display: flex;
-    flex: 1;
     height: 100px;
     background-color: #f4eee8;
 }
 
-div.section1 {
+.section1 {
     font-family: island_momentsregular, Arial;
     color: rgb(1, 106, 176);
     font-size: 5rem;
     justify-content: center;
     align-items: center;
+    flex: 1.5;
 }
 
-div.section1 p {
+.section2 { flex: 2; }
+.section3 { flex: 1; }
+
+/* Text in section1 */
+.section1 p {
     display: flex;
 }
 
+/* Markenname im Overlay */
 .brand-name {
     font-size: 3rem;
     font-family: island_momentsregular;
-    margin-top: -20px;
+    margin-top: -20px; /* Feinanpassung */
 }
 
+/* Bild-Credits */
 .image-credits {
     position: absolute;
     bottom: 1.5%;
-    margin: 0 auto;
     left: 50%;
-    transform: translate(-50%);
-    background-color: rgb(37, 101, 180, 0.8);
+    transform: translateX(-50%);
+    width: 50%;
+    text-align: center;
+    background-color: rgba(37, 101, 180, 0.8);
     color: white;
     padding: 2px 4px;
     border: 1px solid white;
     font-size: 0.8rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Formular-Stile */
+form {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+form .row {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+button {
+width: 15rem;
+height: 3rem;
+padding: 1rem;
+background-color: rgba(37, 101, 180);
+color: white;
+border: 1px solid white;
+}
+
+button:hover {
+    background-color: white;
+    color:  rgba(37, 101, 180);
+    border: 1px solid  rgba(37, 101, 180); 
 }
