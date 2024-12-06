@@ -30,77 +30,64 @@
                 </div>
                 <div class="row">
                     <div class="input">
-                        <label for="check-in">Check-in date:</label>
-                        <input type="date" id="check-in" name="check-in">
+                        <label for="check-in">Check-in date:<sup>*</sup></label>
+                        <div><input type="date" id="check-in" name="check-in" required><span></span></div>
                     </div>
                     <div class="input">
-                        <label for="check-out">Check-out date:</label>
-                        <input type="date" id="check-out" name="check-out">
+                        <label for="check-out">Check-out date:<sup>*</sup></label>
+                        <div><input type="date" id="check-out" name="check-out" required><span></span></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input">
-                        <label for="bungalow">Bungalow class:</label>
-                        <select name="bungalow" id="bungalow">
+                        <label for="bungalow">Bungalow class:<sup>*</sup></label>
+                        <div><select name="bungalow" id="bungalow" required>
                             <option value="basic">basic</option>
                             <option value="deluxe">deluxe</option>
                             <option value="luxury">luxury</option>
-                        </select>
+                        </select><span></span></div>
                     </div>
                     <div class="input"></div>
                 </div>
                 <div class="row">
                     <div class="input">
-                        <label for="first-name">First name:</label>
-                        <input type="text" id="first-name" name="first-name" autocomplete="name">
+                        <label for="first-name">First name:<sup>*</sup></label>
+                        <div><input type="text" id="first-name" name="first-name" autocomplete="name" required maxlength="50"><span></span></div>
+
                     </div>
                     <div class="input">
-                        <label for="last-name">Last name:</label>
-                        <input type="text" id="last-name" name="last-name" autocomplete="family-name">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input">
-                        <label for="street">Street + No.:</label>
-                        <input type="text" id="street" name="street" autocomplete="street-address">
-                    </div>
-                    <div class="input">
-                        <label for="zip">Zip code:</label>
-                        <input type="text" id="zip" name="zip" autocomplete="postal-code">
-                    </div>
-                    <div class="input">
-                        <label for="city">City:</label>
-                        <input type="text" id="city" name="city">
+                        <label for="last-name">Last name:<sup>*</sup></label>
+                        <div><input type="text" id="last-name" name="last-name" autocomplete="family-name" required maxlength="50"><span></span></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input">
-                        <label for="email">Email adress:</label>
-                        <input type="email" id="email" name="email" autocomplete="email">
+                        <label for="email">Email adress:<sup>*</sup></label>
+                        <div><input type="email" id="email" name="email" autocomplete="email" required><span></span></div>
                     </div>
                     <div class="input">
                         <label for="phone">Phone number:</label>
-                        <input type="tel" id="phone" name="phone" autocomplete="tel">
+                        <div><input type="tel" id="phone" name="phone" autocomplete="tel" pattern="^(\+49|0049|0)(\d{1,4})(\s?\d+)*$"><span></span></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input">
-                        <label for="cc">Credit card:</label>
-                        <input type="text" inputmode="numeric" autocomplete="cc-number" id="cc">
+                        <label for="cc">Credit card:<sup>*</sup></label>
+                        <div><input type="text" inputmode="numeric" autocomplete="cc-number" id="cc" required minlength="15" maxlength="16" pattern="^\d{15}\d?$"><span></span></div>
                     </div>
                     <div class="input">
-                        <label for="cc-expire">Expiration date:</label>
-                        <input type="text" inputmode="numeric" autocomplete="cc-exp" id="cc-expire">
+                        <label for="cc-expire">Expiration date:<sup>*</sup></label>
+                        <div><input type="text" inputmode="numeric" autocomplete="cc-exp" id="cc-expire" placeholder="MM/YY" required pattern="^(0[1-9]|1[0-2])(\/|-| )?\d{2}$"><span></span></div>
                     </div>
                     <div class="input">
-                        <label for="cc-code">Security code:</label>
-                        <input type="text" inputmode="numeric" autocomplete="cc-csc" id="cc-code">
+                        <label for="cc-code">Security code:<sup>*</sup></label>
+                        <div><input type="text" inputmode="numeric" autocomplete="cc-csc" id="cc-code" required pattern="\d{3}"><span></span></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input">
-                        <label for="password">Password:</label>
-                        <input type="password" id="password" name="password" autocomplete="current-password">
+                        <label for="password">Password:<sup>*</sup><span class="tooltip">  ⓘ</span></label>
+                        <div><input type="password" id="password" name="password" autocomplete="current-password" required><span></span></div>
                     </div>
                 </div>
             </form>
